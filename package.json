@@ -1,0 +1,37 @@
+{
+  "name": "circular-dependency-analyzer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node ./index.ts"
+  },
+  "author": "Xaber",
+  "license": "MIT",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/tests/[^_]*\\.test)\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.9.3",
+    "jest": "^23.5.0",
+    "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "glob": "^7.1.3"
+  }
+}
