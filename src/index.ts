@@ -37,7 +37,7 @@ const isCircularReference = function (reqsStack, file, seenModules) {
       return maybeCyclicalPathsList
     }
   }
-};
+}
 
 export const getCircularReferences = (dir, alias) => {
   const reqsStack = getFileRequiresStack(dir, alias)
