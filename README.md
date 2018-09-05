@@ -1,4 +1,4 @@
-# circular-dependency-analyzer
+# circular-dependency-analyzer [![npm](https://img.shields.io/npm/v/circular-dependency-analyzer.svg)](https://www.npmjs.com/package/circular-dependency-analyzer) [![License](https://img.shields.io/npm/l/circular-dependency-analyzer.svg)](https://www.npmjs.com/package/circular-dependency-analyzer)
 
 Detect modules with circular dependencies in files.
 

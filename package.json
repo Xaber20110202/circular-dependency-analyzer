@@ -1,7 +1,12 @@
 {
   "name": "circular-dependency-analyzer",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.2",
+  "description": "Detect modules with circular dependencies in files",
+  "keywords": [
+    "circular",
+    "dependency",
+    "analyzer"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
@@ -9,6 +14,10 @@
   },
   "author": "Xaber",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xaber20110202/circular-dependency-analyzer.git"
+  },
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
