@@ -28,7 +28,7 @@ yarn install circular-dependency-analyzer
 
 |Result|Type|Description|
 |--|--|--
-|circularDependencies|Array|It's a two-dimensional array, each item array represents a circular dependency|
+|circularDependencies|2 d array|It's a two-dimensional array, each item array represents a circular dependency|
 
 ## Examples
 ```typescript
