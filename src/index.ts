@@ -45,7 +45,14 @@ export const getCircularReferences = (dir: string, alias?: object) => {
   const circles = []
   filelist.forEach(file => {
     const arr = isCircularReference(reqsStack, file, {})
-    if (arr && circles.every(item => item.join('') !== arr.join(''))) {
+    if (arr && circles.every(item => {
+      const a0 = arr[0]
+      const a1 = arr[1]
+      const i0 = item[0]
+      const i1 = item[1]
+      return a0 + a1 !== i0 + i1 &&
+        a0 + a1 !== i1 + i0
+    })) {
       circles.push(arr)
     }
   })

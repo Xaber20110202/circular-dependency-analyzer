@@ -26,14 +26,11 @@ describe('getCircularReferences', () => {
 
   it('should get an array with one item from test dir', () => {
     const circules = getCircularReferences('tests')
-    expect(circules.length).toBe(2)
+    expect(circules.length).toBe(1)
 
     const expected = [
       'getCircularReferences.test', 'getCircularReferencesHelper',
     ].map(x => `${process.cwd()}/tests/${x}`)
-    
-    expect(circules[0][0]).toBe(circules[1][1])
-    expect(circules[0][1]).toBe(circules[1][0])
 
     expect(expected.sort()).toEqual(circules[0].sort())
   })
