@@ -5,7 +5,9 @@ Detect modules with circular dependencies in files.
 ## Installation
 ```
 npm install circular-dependency-analyzer
+
 // or
+
 yarn install circular-dependency-analyzer
 ```
 
@@ -47,7 +49,7 @@ getCircularReferences('src', {
 
 More examples you can find in `tests` dir.
 
-## Inspired and cp from
+## Inspired or cp from
 
 * [js-code-structure](https://github.com/timqian/js-code-structure)
 * [circular-dependency-plugin](https://github.com/aackerman/circular-dependency-plugin)
