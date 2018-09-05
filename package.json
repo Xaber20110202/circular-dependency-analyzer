@@ -10,7 +10,8 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "codecov": "codecov"
   },
   "author": "Xaber",
   "license": "MIT",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.1",
     "@types/node": "^10.9.3",
+    "codecov": "^3.1.0",
     "jest": "^23.5.0",
     "ts-jest": "^23.1.4",
     "ts-node": "^7.0.1",
