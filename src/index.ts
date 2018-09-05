@@ -3,7 +3,7 @@ import getRequiredInfoSync from './getRequiredInfoSync'
 import relativePathToAbsolute from './relativePathToAbsolute'
 import deleteExtAndIndex from './deleteExtAndIndex'
 
-export const getFileRequiresStack = (dir, alias) => {
+export const getFileRequiresStack = (dir: string, alias?: object) => {
   const filelist = getPathsSync(dir)
   const stack = {}
   filelist.forEach(file => {
@@ -39,7 +39,7 @@ const isCircularReference = function (reqsStack, file, seenModules) {
   }
 }
 
-export const getCircularReferences = (dir, alias) => {
+export const getCircularReferences = (dir: string, alias?: object) => {
   const reqsStack = getFileRequiresStack(dir, alias)
   const filelist = Object.keys(reqsStack)
   const circles = []
