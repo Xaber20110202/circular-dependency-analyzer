@@ -17,7 +17,7 @@ describe('getPathsSync', () => {
   })
 
   it('should get filelist from ./ and except lib, tests dir', () => {
-    const fileList = getPathsSync('./', ['lib', 'tests'])
+    const fileList = getPathsSync('./', ['lib', 'tests', 'coverage'])
     expect(fileList).toEqual([
       'package-lock.json',
       'package.json',
